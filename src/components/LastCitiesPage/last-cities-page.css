@@ -1,0 +1,32 @@
+.last-cities-page-container {
+    grid-row: -1 / 2;
+    grid-column: 2;
+    padding: 10px;
+    /* background-color: #fff; */
+    border-radius: 20px;
+}
+
+.last-cities-page-container {
+    color: var(--dark-theme-cyan);
+}
+
+.city-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.city-item-dot {
+    color: red;
+    font-size: 12px;
+}
+
+.last-cities-page {
+    font-size: 28px;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}

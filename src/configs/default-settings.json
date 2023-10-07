@@ -1,0 +1,12 @@
+{
+    "weather": {
+        "temperature_unit": "",
+        "precipitation_unit": "",
+        "windspeed_unit": "",
+        "timezone": "Europe/London"
+    },
+    "additionta_data": {
+        "city_API_key": "Hlpmj4iS8CIcxXuVFpHSAOecISYIWR0cMSblS1o7",
+        "hourly_items_step": 2
+    }
+}

@@ -1,0 +1,41 @@
+.hourly-weather-data-container {
+    background-color: var(--default-gray);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.hourly-list {
+    list-style: none;
+    display: grid;
+    height: 100%;
+    grid-template: repeat(2, 1fr) / repeat(6, 1fr);
+    gap: 7px;
+}
+
+.hour-item {
+    background-color: var(--default-gray);
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: var(--dark-theme-cyan);
+}
+
+.hour {
+    color: var(--dark-theme-light);
+}
+
+.hourly-wind-data {
+    text-align: center;
+    color: var(--dark-theme-yellow);
+}
+
+.cloud-cover {
+    text-align: center;
+}
+
+.hourly-weather-data-container .weather-icon .icon {
+    font-size: 48px;
+}

@@ -1,0 +1,50 @@
+.temperature-container {
+    display: flex;
+    gap: 10px;
+}
+
+.temperature {
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+        "header header"
+        "min max"
+        "temp-value temp-value"
+        "temp-value temp-value";
+    justify-items: center;
+    align-items: center;
+}
+
+.temperature-header {
+    color: var(--dark-theme-yellow);
+    grid-area: header;
+    font-size: 18px;
+    cursor: help;
+}
+
+.min-max-header {
+    font-size: 13px;
+}
+
+.min {
+    grid-area: min;
+}
+
+.max {
+    grid-area: max;
+}
+
+.temperature-value {
+    grid-area: temp-value;
+    display: flex;
+    justify-content: space-around;
+}
+
+.temperature-value-text {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.temperature-value-text {
+    color: var(--dark-theme-cyan);
+}

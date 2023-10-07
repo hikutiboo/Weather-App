@@ -1,0 +1,133 @@
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slide-vertical {
+    0% {
+        transform: translateY(0);
+        filter: drop-shadow(-10px 0px 3px hsl(0, 0%, 0%));
+    }
+
+    25% {
+        transform: translateY(-3%);
+        filter: drop-shadow(-10px 3px 3px hsl(0, 0%, 0%));
+    }
+
+    50% {
+        transform: translateY(0);
+        filter: drop-shadow(-10px 0px 3px hsl(0, 0%, 0%));
+    }
+
+    75% {
+        transform: translateY(3%);
+        filter: drop-shadow(-10px -3px 3px hsl(0, 0%, 0%));
+    }
+
+    100% {
+        transform: translateY(0);
+        filter: drop-shadow(-10px 0px 3px hsl(0, 0%, 0%));
+    }
+}
+
+@keyframes slide-horizontal {
+    0% {
+        transform: translateX(0);
+        filter: drop-shadow(0px 10px 3px hsl(0, 0%, 0%));
+    }
+
+    25% {
+        transform: translateX(-5%);
+        filter: drop-shadow(5px 10px 3px hsl(0, 0%, 0%));
+    }
+
+    50% {
+        transform: translateX(0);
+        filter: drop-shadow(0px 10px 3px hsl(0, 0%, 0%));
+    }
+
+    75% {
+        transform: translateX(5%);
+        filter: drop-shadow(-5px 10px 3px hsl(0, 0%, 0%));
+    }
+
+    100% {
+        transform: translateX(0);
+        filter: drop-shadow(0px 10px 3px hsl(0, 0%, 0%));
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+    --min-element-size: calc(100%/15);
+    --dark-theme-yellow: hsl(60, 100%, 50%);
+    --dark-theme-dark-yellow: hsl(60, 100%, 35%);
+    --default-gray: hsla(0, 0%, 50%, .4);
+    --dark-theme-light: hsl(0, 0%, 90%);
+    --dark-theme-dark-text: hsl(218, 45%, 22%);
+    --dark-theme-bg: hsl(215, 46%, 8%);
+    --dark-theme-cyan: hsl(193, 95%, 68%);
+    --dark-theme-blue: hsl(204, 62%, 34%);
+    --dark-theme-warning-color: hsl(50, 100%, 50%);
+    --dark-theme-danger-color: hsl(5, 80%, 40%);
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#page {
+    background-color: var(--dark-theme-bg);
+    min-height: 100vh;
+    padding: 10px 15px;
+    display: grid;
+    grid-template-columns: 1fr 8fr 4fr;
+    grid-template-rows: 1fr 5fr 9fr;
+    grid-template-areas:
+        "sb sf ."
+        "sb mwd dwd"
+        "sb hwd dwd";
+    gap: 20px;
+}
+
+.sidebar-container {
+    grid-area: sb;
+}
+
+.search-field-container {
+    grid-area: sf;
+}
+
+.main-weather-data-container {
+    grid-area: mwd;
+}
+
+.hourly-weather-data-container {
+    grid-area: hwd;
+}
+
+.daily-weather-data-container {
+    grid-area: dwd;
+}

@@ -1,0 +1,78 @@
+
+
+.weather-icon .icon {
+    font-size: 64px;
+    padding: 10px 0;
+}
+
+.weather-icon .sun-icon,
+.weather-icon .moon-icon {
+    color: hsl(60, 100%, 50%);
+    animation: spin 5s linear infinite;
+}
+
+.weather-icon .moon-icon {
+    animation: slide-vertical 1.5s linear infinite;
+}
+
+.weather-icon .cloud-sun-icon,
+.weather-icon .cloud-moon-icon {
+    color: hsl(180, 100%, 50%);
+    animation: slide-horizontal 1.5s linear infinite;
+}
+
+.weather-icon .cloud-icon {
+    color: hsl(245, 59%, 51%);
+    animation: slide-horizontal 1.5s linear infinite;
+}
+
+.weather-icon .smog-icon {
+    color: hsl(252, 100%, 25%);
+    animation: slide-horizontal 1.5s linear infinite;
+}
+
+.weather-icon .droplet-icon {
+    color: hsl(214, 100%, 50%);
+    animation: pulse 1s linear alternate infinite;
+}
+
+.weather-icon .snowflake-icon {
+    color: hsl(0, 0%, 100%);
+    animation: spin 5s linear infinite;
+}
+
+.weather-icon .cloud-rain-icon {
+    color: hsl(180, 100%, 27%);
+    animation: slide-horizontal 1.5s linear infinite;
+}
+
+.weather-icon .cloud-sun-rain-icon,
+.weather-icon .cloud-moon-rain-icon {
+    color: hsl(240, 80%, 50%);
+    animation: slide-horizontal 1.5s linear infinite;
+}
+
+.weather-icon .cloud-showers-heavy-icon {
+    color: hsl(240, 100%, 50%);
+    animation: slide-horizontal 1.5s linear infinite;
+}
+
+.weather-icon .cloud-bolt-icon {
+    color: hsl(60, 90%, 45%);
+    animation: slide-vertical 1s linear infinite;
+}
+
+.weather-icon .bolt-icon {
+    color: hsl(60, 90%, 45%);
+    animation: slide-vertical 1s linear infinite;
+}
+
+.weather-icon .plus-icon {
+    color: hsl(10, 100%, 50%);
+    animation: pulse 1s linear alternate infinite;
+}
+
+.weather-icon .error-icon {
+    color: red;
+    animation: pulse .6s linear alternate infinite;
+}

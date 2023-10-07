@@ -1,0 +1,44 @@
+.main-weather-data-container {
+    padding: 10px 20px;
+    color: var(--dark-theme-light);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "main add-data"
+        "temp add-data";
+    align-items: center;
+    gap: 20px 0;
+    justify-content: space-between;
+}
+
+.precipitation-probability {
+    color: gray;
+}
+
+.weather-additional-data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-self: end;
+}
+
+.weather-type-icon {
+    font-size: 48px;
+}
+
+.additionl-data-text {
+    color: var(--dark-theme-cyan);
+}
+
+.main-data-header {
+    grid-area: main;
+}
+
+.temperature-container {
+    grid-area: temp;
+}
+
+.weather-additional-data {
+    grid-area: add-data;
+}

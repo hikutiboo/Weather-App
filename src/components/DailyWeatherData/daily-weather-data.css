@@ -1,0 +1,67 @@
+.daily-weather-data-container {
+    background-color: var(--default-gray);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.daily-weather-list {
+    list-style: none;
+    display: grid;
+    gap: 5px;
+    height: 100%;
+    align-content: space-between;
+}
+
+.day-item {
+    height: fit-content;
+    color: var(--dark-theme-yellow);
+    background-color: var(--default-gray);
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "day tc precip"
+    "wti tc hwd";
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+.day-item .temperature {
+    align-content: center;
+    height: fit-content;
+}
+
+.day-item .temperature-container {
+    flex-direction: column;
+}
+
+.day-item .day {
+    grid-area: day;
+}
+
+.day-item .weather-type-icon {
+    grid-area: wti;
+}
+
+.day-item .temperature-container {
+    grid-area: tc;
+}
+
+.day-item .cloud-cover {
+    grid-area: cc;
+}
+
+.day-item .precipitation {
+    grid-area: precip;
+}
+
+.daily-wind-data {
+    grid-area: hwd;
+    color: var(--dark-theme-cyan);
+}
+
+.daily-weather-data-container .weather-icon .icon {
+    font-size: 48px;
+}

@@ -1,0 +1,9 @@
+.loading-block {
+    width: 150px;
+    height: 150px;
+    border: 15px solid transparent;
+    border-left-color: var(--dark-theme-yellow);
+    border-right-color: var(--dark-theme-cyan);
+    border-radius: 50%;
+    animation: spin 1s ease infinite;
+}
